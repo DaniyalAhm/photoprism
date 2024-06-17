@@ -119,6 +119,7 @@ services:
     volumes:
       - ".:/go/src/github.com/photoprism/photoprism"
       - "go-mod:/go/pkg/mod"
+      - "/DATA/AppData/syncthing/config/Camera/Camera:/photoprism/originals"
 
   ## MariaDB (Database Server)
   ## Docs: https://mariadb.com/docs/reference/
