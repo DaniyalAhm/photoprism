@@ -128,6 +128,17 @@ services:
     volumes:
       - ".:/go/src/github.com/photoprism/photoprism"
       - "go-mod:/go/pkg/mod"
+      - ".:/go/src/github.com/photoprism/photoprism"
+      - "go-mod:/go/pkg/mod"
+      - "/DATA/AppData/syncthing/config/Camera/Camera/:/go/src/github.com/photoprism/photoprism/storage/originals"
+      - "/DATA/Downloads/Takeout/Google Photos/Photos from 2015:/go/src/github.com/photoprism/photoprism/storage/originals/Photos from 2015"
+      - "/DATA/Downloads/Takeout/Google Photos/Photos from 2018:/go/src/github.com/photoprism/photoprism/storage/originals/Photos from 2018"
+      - "/DATA/Downloads/Takeout/Google Photos/Photos from 2019:/go/src/github.com/photoprism/photoprism/storage/originals/Photos from 2019"
+      - "/DATA/Downloads/Takeout/Google Photos/Photos from 2020:/go/src/github.com/photoprism/photoprism/storage/originals/Photos from 2020"
+      - "/DATA/Downloads/Takeout/Google Photos/Photos from 2021:/go/src/github.com/photoprism/photoprism/storage/originals/Photos from 2021"
+      - "/DATA/Downloads/Takeout/Google Photos/Photos from 2022:/go/src/github.com/photoprism/photoprism/storage/originals/Photos from 2022"
+      - "/DATA/Downloads/Takeout/Google Photos/Photos from 2023:/go/src/github.com/photoprism/photoprism/storage/originals/Photos from 2023"
+      - "/DATA/Downloads/Takeout/Google Photos/Pics to use:/go/src/github.com/photoprism/photoprism/storage/originals/Pics to use"
 
   ## MariaDB (Database Server)
   ## Docs: https://mariadb.com/docs/reference/
